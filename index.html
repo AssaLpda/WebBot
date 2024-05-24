@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Principal</title>
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la fuente de todos los elementos h1, h2, h3, h4 */
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin: 10px;
+        }
+
+        .botones-inferiores {
+            margin-top: 20px;
+        }
+
+        .contenedor-botones {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #nombreUsuario {
+            margin-bottom: 10px;
+        }
+
+        /* Modo oscuro */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .container.dark-mode {
+            border-color: #444;
+            background-color: #1e1e1e;
+        }
+
+        .btn-dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Estilo para el botón del modo oscuro */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="contenedor-botones">
+        <div class="container">
+            <h2>BOTROLL</h2>
+            <!-- Botón de modo oscuro -->
+    <i id="darkModeToggle" class="fas fa-lightbulb dark-mode-toggle"></i>
+            
+        </div>
+
+        <div class="container">
+            <h4 class="saludo-bienvenida">Saludo de bienvenida</h4>
+            <button id="btn1" class="btn btn-primary">
+                <i class="fas fa-handshake"></i> Saludamos
+            </button>
+
+            <button id="btnUsuarioNuevo" class="btn btn-info">
+                <i class="fas fa-smile"></i> Mensaje de bienvenida
+            </button>
+        </div>
+        <div class="container">
+            <h4>Creacion de usuario</h4>
+
+            <label for="nombreUsuario">Nombre de usuario:</label>
+            <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre">
+
+            <button id="btnCrearUsuario" class="btn btn-primary">
+                <i class="fas fa-user-plus"></i> Crear Usuario
+            </button>
+
+            <button id="btnReestablecerUsuario" class="btn btn-secondary">
+
+                <i class="fas fa-sync-alt"></i> Reestablecer Usuario
+            </button>
+
+            <button id="btnPlataformaWeb" class="btn btn-dark">
+                <i class="fas fa-globe"></i> PLATAFORMA WEB
+            </button>    
+
+            <button id="btnAgendame" class="btn btn-dark">
+                <i class="fas fa-address-book"></i> AGENDAME
+            </button>
+
+            
+        </div>
+
+        <div class="container">
+            <h3>RETIROS</h3>
+
+            <button id="btn3" class="btn btn-info">
+                <i class="fas fa-money-check-alt"></i> DATOS DE RETIRO
+            </button>
+            
+            <button id="btnEsperaPago" class="btn btn-warning">
+                <i class="fas fa-hourglass-half"></i> ESPERA DE PAGO
+            </button>
+    
+            <button id="btn4" class="btn btn-success">
+                <i class="fas fa-check-circle"></i> PAGO REALIZADO
+            </button>
+            
+        </div>
+
+        <div class="container">
+            
+            <button id="btnCBU" class="btn btn-secondary">
+                <i class="fas fa-university"></i> CBU
+            </button>
+            
+
+            <textarea id="datosCBU" rows="4" cols="50">
+                
+            </textarea>
+            <div class="botones-inferiores">
+                <button id="btnEditar" class="btn btn-secondary">Editar</button>
+                <button id="btnGuardar" class="btn btn-success" style="display: none;">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="forgot_password.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
